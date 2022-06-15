@@ -1,15 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:payflow/modules/app_widget.dart';
-import 'package:payflow/shared/themes/app_colors.dart';
-
-import 'modules/login/login_page.dart';
 
 void main() {
-  runApp(AppFirebase());
+  runApp(const AppFirebase());
 }
 
 class AppFirebase extends StatefulWidget {
+  const AppFirebase({Key? key}) : super(key: key);
+
   @override
   _AppFirebaseState createState() => _AppFirebaseState();
 }
